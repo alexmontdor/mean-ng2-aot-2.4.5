@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpModule } from "@angular/http";
-import { Routes, RouterModule } from "@angular/router";
 
 import { AppComponent } from "./app.component";
 import { AuthenticationComponent } from "./auth/authentication.component";
@@ -24,9 +23,6 @@ import { MessageModule } from "./messages/message.module";
         routing,
         HttpModule,
         MessageModule
-    ],
-    exports: [
-        RouterModule
     ],
     providers: [AuthService, ErrorService],
     bootstrap: [AppComponent]
