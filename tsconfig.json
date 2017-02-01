@@ -3,17 +3,10 @@
     "module": "commonjs",
     "target": "es5",
     "noImplicitAny": false,
-    "sourceMap": false,
+    "sourceMap": true,
     "mapRoot": "",
     "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "lib": [
-      "es2015",
-      "dom"
-    ],
-    "outDir": "./public/js/app",
-    "skipLibCheck": true,
-    "baseUrl": "."
+    "experimentalDecorators": true
   },
   "exclude": [
     "node_modules",

@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
+    "build:dev": "npm run clear && webpack --config webpack.config.dev.js --progress --profile --watch",
     "build:prod": "webpack",
     "clear": "del-cli 'public/js/app/**/*.js' 'public/js/app/**/*.js.map' '!public/js/app/bundle.js' '!public/js/app/*.chunk.js' 'assets/app/**/*.js' 'assets/app/**/*.map' 'assets/app/**/*.ngfactory.ts' 'assets/app/**/*.shim.ts'"
   },
